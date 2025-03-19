@@ -2,9 +2,11 @@ package tests;
 
 import java.util.List;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import base.Basetest;
+import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 import pages.Cartpage;
 import pages.Homepage;
 import pages.Productlistpage;
@@ -29,9 +31,21 @@ public class Test01 extends Basetest{
  		cart.addItemsTocart();
  		Thread.sleep(6000);
  		System.out.println("Switched to chilid window");
- 		//cart.addItem01();
- 		//cart.clickonCart();
- 		
+ 		cart.addItem01();
+ 		System.out.println("Item added to cart");
+ 		Thread.sleep(6000);
+// 		cart.addItem2();
+// 		cart.addItemsTocart();
+// 		Thread.sleep(6000);
+// 		System.out.println("Switched to chilid window");
+// 		cart.addItem02();
+// 		System.out.println("Item added to cart");
+// 		Thread.sleep(6000);
+ 		cart.clickonCart();
+ 		Thread.sleep(6000);
+ 		String totalitemsprice = cart.cartTotal();
+ 		System.out.println("Total price in cart :" + totalitemsprice);
+ 		Assert.assertNotNull(totalitemsprice);
  		
  	}
 

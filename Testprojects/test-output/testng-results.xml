@@ -2,24 +2,31 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-18T12:52:05 IST" name="Default suite" finished-at="2025-03-18T12:52:33 IST" duration-ms="27783">
+  <suite started-at="2025-03-19T19:41:21 IST" name="Suite" finished-at="2025-03-19T19:42:06 IST" duration-ms="45187">
     <groups>
     </groups>
-    <test started-at="2025-03-18T12:52:05 IST" name="Default test" finished-at="2025-03-18T12:52:33 IST" duration-ms="27783">
+    <test started-at="2025-03-19T19:41:21 IST" name="Test" finished-at="2025-03-19T19:42:06 IST" duration-ms="45187">
       <class name="tests.Test01">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.Test01@f0c8a99]" started-at="2025-03-18T12:52:05 IST" name="setUp" finished-at="2025-03-18T12:52:08 IST" duration-ms="2691" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.Test01@46cdf8bd]" started-at="2025-03-19T19:41:21 IST" name="setUp" finished-at="2025-03-19T19:41:24 IST" duration-ms="2957" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testEcommerce()[pri:0, instance:tests.Test01@f0c8a99]" started-at="2025-03-18T12:52:08 IST" name="testEcommerce" finished-at="2025-03-18T12:52:32 IST" duration-ms="24729" status="PASS">
+        <test-method signature="testEcommerce()[pri:0, instance:tests.Test01@46cdf8bd]" started-at="2025-03-19T19:41:24 IST" name="testEcommerce" finished-at="2025-03-19T19:42:05 IST" duration-ms="41894" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEcommerce -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.Test01@f0c8a99]" started-at="2025-03-18T12:52:32 IST" name="tearDown" finished-at="2025-03-18T12:52:33 IST" duration-ms="289" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.Test01@46cdf8bd]" started-at="2025-03-19T19:42:06 IST" name="tearDown" finished-at="2025-03-19T19:42:06 IST" duration-ms="270" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.Test01 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

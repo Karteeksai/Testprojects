@@ -10,7 +10,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class Excelutilites {
 	
-private static final String FILE_PATH="Products.xlsx";
+ //static String FILE_PATH="Products.xlsx";
  	
  	public static void writeToExcel(List<String[]> data) {
  		
@@ -24,7 +24,7 @@ private static final String FILE_PATH="Products.xlsx";
  				row.createCell(i).setCellValue(rowData[i]);
  			}
  		}
- 		try (FileOutputStream fos = new FileOutputStream(FILE_PATH)){
+ 		try (FileOutputStream fos = new FileOutputStream("Data.xlsx")){
  			workbook.write(fos);
  			workbook.close();
  		}catch(IOException e) {
