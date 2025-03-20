@@ -15,9 +15,9 @@ public class Homepage {
 	}
 	public void searchProduct(String productName) throws Exception{
  		driver.findElement(searchBox).sendKeys(productName);
- 		Thread.sleep(3000);
+ 		//Thread.sleep(3000);
  		driver.findElement(searchbutton).click();
- 		Thread.sleep(3000);
+ 		//Thread.sleep(3000);
  	}
 
 }

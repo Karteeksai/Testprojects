@@ -27,25 +27,37 @@ public class Test01 extends Basetest{
  		Excelutilites.writeToExcel(products);
  		
  		Cartpage cart = new Cartpage(driver);
- 		cart.addItem1();
- 		cart.addItemsTocart();
- 		Thread.sleep(6000);
- 		System.out.println("Switched to chilid window");
- 		cart.addItem01();
- 		System.out.println("Item added to cart");
- 		Thread.sleep(6000);
-// 		cart.addItem2();
-// 		cart.addItemsTocart();
-// 		Thread.sleep(6000);
-// 		System.out.println("Switched to chilid window");
-// 		cart.addItem02();
-// 		System.out.println("Item added to cart");
-// 		Thread.sleep(6000);
- 		cart.clickonCart();
- 		Thread.sleep(6000);
- 		String totalitemsprice = cart.cartTotal();
- 		System.out.println("Total price in cart :" + totalitemsprice);
- 		Assert.assertNotNull(totalitemsprice);
+ 		cart.clickOnItem1();
+		//Thread.sleep(5000);
+		cart.switchwindow();
+		cart.clickOnItem1cart();
+		//Thread.sleep(5000);
+		cart.switchWindows();
+		cart.clickOnItem2();
+		//Thread.sleep(5000);
+		cart.switchwindow();
+		cart.clickOnItem2cart();
+		//Thread.sleep(5000);
+		cart.switchWindows();
+		//Thread.sleep(3000);
+		cart.clickOnItem3();
+		//Thread.sleep(5000);
+		cart.switchwindow();
+		cart.clickOnItem3cart();
+		//Thread.sleep(5000);
+		cart.switchWindows();
+		//Thread.sleep(3000);
+		cart.clickOnItem1();
+		//Thread.sleep(5000);
+		cart.switchwindow();
+		cart.clickOnItem1cart();
+		//Thread.sleep(5000);
+		cart.switchWindows();
+		cart.clickOnCart();
+		String totalprice = cart.clickOnTotalcart();
+		//Thread.sleep(3000);
+		System.out.println("total price in cart :"+ totalprice);
+		Assert.assertNotNull(totalprice);
  		
  	}
 
